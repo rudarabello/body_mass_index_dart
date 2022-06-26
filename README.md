@@ -1,10 +1,8 @@
-# bodymassindex
+**# Body Mass Index Calculator #**
 
-A new Flutter project.
+This project is my first wotk on Flutter/Dart 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
+Is a body mass calculator
 
 A few resources to get you started if this is your first Flutter project:
 
