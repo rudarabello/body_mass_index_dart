@@ -1,9 +1,11 @@
-import 'package:flutter/material.dart';
 import 'package:bodymassindex/constants/app_constants.dart';
+import 'package:flutter/material.dart';
 
-class LeftBar extends StatelessWidget {
+class RightBar extends StatelessWidget {
   final double barWidth;
-  const LeftBar({required Key key, required this.barWidth}) : super(key: key);
+
+  const RightBar({required Key key, required this.barWidth}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -14,8 +16,8 @@ class LeftBar extends StatelessWidget {
           width: barWidth,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20),
-                bottomLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
+                bottomRight: Radius.circular(20),
               ),
               color: accentHexColor),
         ),
