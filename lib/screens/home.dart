@@ -1,4 +1,3 @@
-import 'package:bodymassindex/constants/app_constants.dart';
 import 'package:bodymassindex/widgets/left_bar.dart';
 import 'package:bodymassindex/widgets/right_bar.dart';
 import 'package:flutter/material.dart';
@@ -20,14 +19,13 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           title: Text(
             "Calculadora de IMC",
-            style:
-                TextStyle(color: accentHexColor, fontWeight: FontWeight.w300),
+            style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.w300),
           ),
           backgroundColor: Colors.transparent,
           elevation: 0,
           centerTitle: true,
         ),
-        backgroundColor: mainHexColor,
+        backgroundColor: Colors.blue,
         body: SingleChildScrollView(
           child: Column(
             children: [
@@ -44,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       style: TextStyle(
                           fontSize: 42,
                           fontWeight: FontWeight.w300,
-                          color: accentHexColor),
+                          color: Colors.black),
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -64,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       style: TextStyle(
                           fontSize: 42,
                           fontWeight: FontWeight.w300,
-                          color: accentHexColor),
+                          color: Colors.black),
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -102,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
-                        color: accentHexColor),
+                        color: Colors.black),
                   ),
                 ),
               ),
@@ -112,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 child: Text(
                   _bmiResult.toStringAsFixed(2),
-                  style: TextStyle(fontSize: 90, color: accentHexColor),
+                  style: TextStyle(fontSize: 90, color: Colors.black),
                 ),
               ),
               SizedBox(
@@ -126,10 +124,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.w400,
-                          color: accentHexColor),
+                          color: Colors.black),
                     ),
                   )),
-              
+              SizedBox(height: 10,),
+              LeftBar(barWidth: 40,),
+              SizedBox(height: 20),
+              LeftBar(barWidth: 70),
+              SizedBox(height: 20,),
+              LeftBar(barWidth: 40,),
+              SizedBox(height: 20,),
+              RightBar(barWidth: 70),
+              SizedBox(height: 50,),
+              RightBar(barWidth: 70),
             ],
           ),
         ));

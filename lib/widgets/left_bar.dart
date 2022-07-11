@@ -1,10 +1,9 @@
-import 'package:bodymassindex/constants/app_constants.dart';
 import 'package:flutter/material.dart';
 
 class LeftBar extends StatelessWidget {
   final double barWidth;
 
-  const LeftBar({required Key key, required this.barWidth}) : super(key: key);
+  const LeftBar({ Key ? key, required this.barWidth, }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +18,7 @@ class LeftBar extends StatelessWidget {
                 topLeft: Radius.circular(20),
                 bottomLeft: Radius.circular(20),
               ),
-              color: accentHexColor),
+              color: Colors.red),
         ),
       ],
     );
